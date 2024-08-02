@@ -2,6 +2,12 @@
 Ingeniería Informática en Tecnologías de la Información. Universidad Miguel Hernández de Elche
 Prácticas y proyectos realizados en distintas asignaturas que me han ayudado ha tener una buena base en ciertos lenguajes de programacion, frameworks, patrones de diseño y buenas prácticas.
 
+<b>
+* No se aceptan contribuciones en este repositorio.
+
+Este repositorio sirve como un portafolio personal en el que presento los proyectos y trabajos que he desarrollado en diversas asignturas del grado.
+</b>
+
 ## Asignaturas:
 
     Asignaturas de segundo curso
