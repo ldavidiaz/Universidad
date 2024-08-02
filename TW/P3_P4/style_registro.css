@@ -1,0 +1,154 @@
+@font-face {
+    font-family: gobold;
+    src: url(fonts/Gobold.Regular.otf);
+    font-family: kenyan;
+    src: url(fonts/kenyan\ coffee\ rg.ttf);
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    width: inherit;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.row .header{
+    width: 100%;
+    height: 80px;
+    background-color:#0e2c40;
+    text-align: center;
+}
+.header img{
+    height: 70%;
+    object-fit: cover;
+    filter: invert(100%);
+}
+.header p{
+    font-weight: bold;
+    height: 20%;
+}
+.col{
+    margin: 0;
+    padding: 0;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+a{
+    color: white;
+}
+
+span{
+    color: red;
+}
+#es-numcuenta{
+    color: gray;
+}
+.container-reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /*  justify-content: center; */
+    width: 100%;
+    height: auto;
+    /* From https://css.glass */
+
+}
+
+.title-reg{
+    font-size: 1.5rem;
+    font-family: gobold,roboto;
+    margin-top: 30px;
+    margin-bottom: 5px;
+} 
+.reg{
+    height: auto;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border:2px outset gray;
+    font-family: roboto;
+    display: flex;
+    flex-direction: column;
+}
+.form__group{
+    margin-bottom: 10px;
+}
+.form__group-input{
+    position: relative;
+/*     display: flex;
+align-items: center; */
+}
+/* ---------MENSAJES ERROR/ok------------*/
+.display__msg-error{
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    margin:0;
+    padding: 0;
+    z-index: 100;
+    opacity: 0;
+    color: #119200;
+}
+.form__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.form__input-error-activo{
+    display: block !important;
+}
+
+.form__msg{
+    font-size: 14px;
+    color: #F66060 !important;
+    display: none;
+}
+.form__msg-activo{
+    display: block;
+}
+.form__msg p{
+    margin: 0;
+}
+
+.form__msg-ok{
+    font-size: 14px;
+    color: #119200 !important;
+    display: none;
+}
+.form__msg-ok-activo{
+    display: block;
+}
+
+.form__group-correcto .form__input{
+    border: 1px solid green;
+    opacity: 1;
+}
+
+.form__group-correcto .display__msg-error{
+    color: #1ed12d;
+    opacity: 1;
+}
+/* ----------input/ ICON ERROR/OK ------------*/
+.form__group-incorrecto .display__msg-error{
+    color: #bb2929 !important;
+    opacity: 1;
+}
+
+.form__group-incorrecto .form__input{
+    padding-bottom: 0;
+    border: 3px solid #bb2929;
+}
+/* LUIS DAVID DIAZ MESA*/

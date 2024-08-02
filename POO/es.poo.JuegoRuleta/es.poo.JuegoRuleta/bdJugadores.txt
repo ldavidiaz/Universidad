@@ -1,0 +1,1 @@
+{"bdJugadores":[{"alias":"luisda","password":"admin123","nombre":"luis david","fechaNac":"02/03/1999"},{"alias":"invitado","password":"invitado","nombre":"invitado","fechaNac":"02/03/1999"},{"alias":"invitado2","password":"invitado","nombre":"invitado","fechaNac":"02/02/2002"},{"alias":"ld","password":"qwert12","nombre":"david","fechaNac":"01/02/1999"}]}

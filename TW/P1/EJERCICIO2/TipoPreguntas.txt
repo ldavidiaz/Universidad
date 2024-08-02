@@ -1,0 +1,5 @@
+-cuestión numérica
+-cuestión libre
+-cuestión tipo test
+-cuestión ordenamiento
+-cuestión booleana V/F

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="examen" type="tipoExamen"/>
+
+    <xsd:complexType name="tipoExamen">
+        <xsd:sequence>
+            <xsd:element name="pregunta" minOccurs="6" maxOccurs="unbounded" type="tipoPregunta"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoPregunta">
+        <xsd:choice minOccurs="1" maxOccurs="unbounded">
+            <xsd:element name="id" minOccurs="1" maxOccurs="unbounded" type="TipoId"></xsd:element>
+            <xsd:element name="enunciado" minOccurs="1" maxOccurs="unbounded" type="xsd:string"></xsd:element>
+            <xsd:element name="p_test" type="tipoTest"></xsd:element>
+            <xsd:element name="p_numerica" type="TipoNumerica"></xsd:element>
+            <xsd:element name="p_ordenar" type="tipoOrdenar"></xsd:element>
+            <xsd:element name="p_booleana" type="tipoBooleana"></xsd:element>
+            <xsd:element name="p_libre" type="tipoLibre"></xsd:element>
+        </xsd:choice>
+        <xsd:attribute name="nombre" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="primerApellido" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="segundoApellido" type="xsd:string" use="optional"></xsd:attribute>
+        <xsd:attribute name="fechaCreacion" type="xsd:date" use="optional"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="TipoId">
+        <xsd:attribute name="id"  type="xsd:string" use="required"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoTest">
+        <xsd:all>
+            <xsd:element name="A" type="xsd:string"></xsd:element>
+            <xsd:element name="B" type="xsd:string"></xsd:element>
+            <xsd:element name="C" type="xsd:string"></xsd:element>
+        </xsd:all>
+        <xsd:attribute name="tipo" type="TipoEleccion"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="TipoNumerica">
+        <xsd:attribute name="min" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="max" type="xsd:string" use="required"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoOrdenar">
+        <xsd:all>
+            <xsd:element name="opcion1" type="xsd:string"></xsd:element>
+            <xsd:element name="opcion2" type="xsd:string"></xsd:element>
+            <xsd:element name="opcion3" type="xsd:string"></xsd:element>
+            <xsd:element name="opcion4" type="xsd:string"></xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoBooleana">
+        <xsd:attribute name="respuesta" type="tipoRespuesta" use="required"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoLibre">
+        <xsd:attribute name="numfilas" use="required"></xsd:attribute>
+        <xsd:attribute name="numcol" use="required"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:simpleType name="TipoEleccion">
+        <xsd:restriction  base="xsd:string">
+         <xsd:enumeration value="unica"/>
+         <xsd:enumeration value="multiple"/>
+        </xsd:restriction>
+     </xsd:simpleType>
+
+
+    <xsd:simpleType name="tipoRespuesta">
+        <xsd:restriction  base="xsd:string">
+         <xsd:enumeration value="si"/>
+         <xsd:enumeration value="no"/>
+         <xsd:enumeration value="verdadero"/>
+         <xsd:enumeration value="falso"/>
+        </xsd:restriction>
+     </xsd:simpleType>
+</xsd:schema>

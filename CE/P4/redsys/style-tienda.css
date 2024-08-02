@@ -1,0 +1,108 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/slider1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    height: 85%;
+    width: 80%;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #101218;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.ctd-producto{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+article > p{
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+.ctd-precio-boton{
+    height: 50px;
+    display: inline-flex;
+    justify-content: end;
+    gap:20px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.img-producto{
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+/***********************/
+table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 20px auto; /* Centrar la tabla en la página */
+    border-collapse: collapse; /* Combinar bordes de las celdas */
+    border: 2px solid #ddd; /* Borde de la tabla */
+}
+
+th, td {
+    padding: 12px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto en las celdas */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo alternado de filas */
+}
+
+th {
+    background-color: #333; /* Fondo del encabezado */
+    color: white; /* Color de texto del encabezado */
+}
+
+td {
+    border: 1px solid #ddd; /* Borde de las celdas */
+}
+
+strong {
+    font-weight: bold; /* Aplicar estilo cursiva a texto enfatizado */
+}
+/*****************/
+.redsys-button {
+    background-color: #F15A22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.redsys-button:hover {
+    background-color: #D54A1E;
+}

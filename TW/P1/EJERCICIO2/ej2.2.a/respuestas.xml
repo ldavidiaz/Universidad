@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE respuestas SYSTEM "respuestas.dtd">
+<respuestas>
+
+    <alumno nombre="" apellidos="" fecha="">
+        <pregunta id="P1">
+            <respuesta tipo="TipoTest">
+                <r_test tipo="unica" respuestaUnicaOk="B"><!-- A|B|C-->
+                   B
+                </r_test>
+            </respuesta>
+        </pregunta> 
+
+        <pregunta id="P2">
+            <respuesta tipo="TipoNumerica">
+                <r_numerica respuestaOk="7">
+                    7
+                </r_numerica>
+            </respuesta>
+
+            <respuesta tipo="TipoLibre">
+                <r_libre respuestaOk="ejemplo de respuesta">
+                    ejemplo de respuesta
+                </r_libre>
+            </respuesta>
+        </pregunta> 
+
+        <pregunta id="P3">
+            <respuesta tipo="TipoOrdenar">
+                <r_ordenar>
+                    <frase1_o respuestaOk="2">2</frase1_o>
+                    <frase2_o respuestaOk="3">3</frase2_o>
+                    <frase3_o respuestaOk="1">1</frase3_o>
+                    <frase4_o respuestaOk="4">4</frase4_o>
+                </r_ordenar>
+            </respuesta>
+        </pregunta> 
+
+        <pregunta id="P4">
+            <respuesta tipo="TipoBooleana">
+                <r_booleana respuestaOk="si"> si</r_booleana>
+            </respuesta>
+            <respuesta tipo="TipoLibre">
+                <r_libre respuestaOk="">
+                    texto libre
+                </r_libre>
+            </respuesta>
+        </pregunta>
+
+        <pregunta id="P5">
+            <respuesta tipo="TipoLibre">
+                <r_libre>
+                    texto libre
+                </r_libre>
+            </respuesta>
+        </pregunta>
+
+        <pregunta id="6">
+            <respuesta tipo="TipoNumerica">
+                <r_numerica respuestaOk="7">
+                    7
+                </r_numerica>
+            </respuesta>
+        </pregunta>
+    </alumno>
+
+    <alumno nombre="" apellidos="" fecha="">
+        <pregunta id="P1">
+            <respuesta tipo="TipoTest">
+                <r_test tipo="unica" respuestaUnicaOk="B"><!-- A|B|C-->
+                   B
+                </r_test>
+            </respuesta>
+        </pregunta> 
+
+        <pregunta id="P2">
+            <respuesta tipo="TipoNumerica">
+                <r_numerica respuestaOk="7">
+                    7
+                </r_numerica>
+            </respuesta>
+
+            <respuesta tipo="TipoLibre">
+                <r_libre respuestaOk="ejemplo de respuesta">
+                    ejemplo de respuesta
+                </r_libre>
+            </respuesta>
+        </pregunta> 
+
+        <pregunta id="P3">
+            <respuesta tipo="TipoOrdenar">
+                <r_ordenar>
+                    <frase1_o respuestaOk="2">2</frase1_o>
+                    <frase2_o respuestaOk="3">3</frase2_o>
+                    <frase3_o respuestaOk="1">1</frase3_o>
+                    <frase4_o respuestaOk="4">4</frase4_o>
+                </r_ordenar>
+            </respuesta>
+        </pregunta> 
+
+        <pregunta id="P4">
+            <respuesta tipo="TipoBooleana">
+                <r_booleana respuestaOk="si"> si</r_booleana>
+            </respuesta>
+            <respuesta tipo="TipoLibre">
+                <r_libre respuestaOk="">
+                    texto libre
+                </r_libre>
+            </respuesta>
+        </pregunta>
+
+        <pregunta id="P5">
+            <respuesta tipo="TipoLibre">
+                <r_libre>
+                    texto libre
+                </r_libre>
+            </respuesta>
+        </pregunta>
+
+        <pregunta id="6">
+            <respuesta tipo="TipoNumerica">
+                <r_numerica respuestaOk="7">
+                    7
+                </r_numerica>
+            </respuesta>
+        </pregunta>
+    </alumno>
+</respuestas>

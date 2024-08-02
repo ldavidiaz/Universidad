@@ -1,0 +1,15 @@
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<!-- ok--><!ELEMENT mensaje ( email | carta ) >
+<!-- ok--><!ELEMENT email (cabecera, asunto?, texto+) ><!-- "? = 0 o 1" "+ = 1 o más" -->
+<!-- ok--><!ATTLIST email respuesta ( si | no ) "no" >
+<!ELEMENT carta (encabezado, texto ) >
+<!ATTLIST carta respuesta ( si | no ) "no" >
+<!-- ok--><!ELEMENT cabecera ( emisor, receptor*, fecha?) ><!-- "* = 0 o más" "?=1 o 0" -->
+<!-- ok--><!ELEMENT asunto ( #PCDATA ) >
+<!-- ok--><!ELEMENT texto ( #PCDATA | saludo )* >
+<!ELEMENT encabezado ( emisor, receptor*, fecha ) >
+<!-- ok--><!ELEMENT emisor ( #PCDATA ) >
+<!-- ok--><!ELEMENT receptor ( #PCDATA ) >
+<!-- ok--><!ELEMENT fecha ( #PCDATA ) >
+<!-- ok--><!ELEMENT saludo ( #PCDATA ) >

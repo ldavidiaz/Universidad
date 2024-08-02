@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+/* fuente:https://glitch.com/~material-theme-generator */
+/* font import */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+ */
+ /* theme variables */
+ :host{
+
+   --primary-color: #1e00ff;
+   --primary-text-color: #ffffff;
+   --complementary-color: #016b31;
+   --secondary-color: #018786;
+   --secondary-text-color: #ffffff;
+   --error-color: #b00020;
+   --error-text-color: #ffffff;
+   --surface-color: #ffffff;
+   --surface-text-color: #000000;
+   --background-color: #d3d3d3;
+   --background-input-color: #cccccc;
+   --small-radius: 3px;
+   --medium-radius: 4px;
+   --large-radius: 0px;
+   --font-family: 'Calibri','Arial', sans-serif;
+ }
+body{
+   display: block;
+   height: 100vh !important;
+   margin: 0;
+}
+app-root{
+  height: 100%;
+  margin: 0;
+  display: block;
+}
+main{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   justify-content: center; 
+   height: 100%;
+ }
+ .sec-contador{
+   flex: 1 1 auto;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: end;
+
+ }
+ .sec-reiniciar{
+   flex: 0 0 auto;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+ }
+ .sec-botones{
+   flex: 0 0 auto;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   gap: 15px;
+   padding-top: 50px;
+ }
+ .sec-chkb-negativos{
+   flex: 1 0 auto;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   gap: 16px;
+ }
+ app-btn-reiniciar,app-btn-incrementar,app-btn-decrementar,app-input-contador,app-contador{
+   width: 90%;
+   /* align-content: center; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ app-contador{
+   flex-direction: column;
+   /* border: 2px solid black; */
+ }
+ 

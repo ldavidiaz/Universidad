@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">contador</string>
+    <string name="title_activity_main">contador</string>
+    <string name="package_name">es.dadm.app</string>
+    <string name="custom_url_scheme">es.dadm.app</string>
+</resources>

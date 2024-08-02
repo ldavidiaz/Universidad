@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FA4399E-255A-40BC-84EB-C484CACB8626}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NETFLIX_2021_22</RootNamespace>
+    <AssemblyName>NETFLIX_2021_22</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="intro_blackcover.xaml.cs">
+      <DependentUpon>intro_blackcover.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="trailer1.xaml.cs">
+      <DependentUpon>trailer1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="trailer2.xaml.cs">
+      <DependentUpon>trailer2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="trailer3.xaml.cs">
+      <DependentUpon>trailer3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="trailer4.xaml.cs">
+      <DependentUpon>trailer4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="trailer5.xaml.cs">
+      <DependentUpon>trailer5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="trailer6.xaml.cs">
+      <DependentUpon>trailer6.xaml</DependentUpon>
+    </Compile>
+    <Page Include="intro_blackcover.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="trailer1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="trailer2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="trailer3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="trailer4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="trailer5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="trailer6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\Netflix-Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\4202092logomovienetflixsocialsocialmediavideo-115596_115705.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\Logo_Netflix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\showTruman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\casi300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\fastandfurious.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\starwars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\588a64fed06f6719692a2d14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\menu_icon-icons.com_69502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\menu-2_90952.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\Inuyasha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\pngaaa.com-3944443.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\menu_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\db_super.jpg" />
+    <Resource Include="recursos_img\family_guy.jpg" />
+    <Resource Include="recursos_img\futurama.jpg" />
+    <Resource Include="recursos_img\sakura_Card_captor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\Arrow_Serie.jpg" />
+    <Resource Include="recursos_img\blacklist.jpg" />
+    <Resource Include="recursos_img\bojack_horseman.jpg" />
+    <Resource Include="recursos_img\mr_robot_Cartel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\brooklyn99.jpg" />
+    <Resource Include="recursos_img\the_office.jpg" />
+    <Resource Include="recursos_img\the_witcher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\himyw.jpg" />
+    <Resource Include="recursos_img\spartacus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\el-club-de-la-lucha-portada.jpg" />
+    <Resource Include="recursos_img\elbueno_elmalo_elfeo.jpg" />
+    <Resource Include="recursos_img\papillon.jpg" />
+    <Resource Include="recursos_img\parejade3.jpg" />
+    <Resource Include="recursos_img\shrek.jpg" />
+    <Resource Include="recursos_img\spider_man_homecoming-cartel-7608.jpg" />
+    <Resource Include="recursos_img\viaje_CHIHIRO_2021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\whiplash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\elviolinrojo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\tiburon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\black_cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos_img\kisspng-washington-d-c-hotel-europe-organization-busines-white-play-icon-bing-images-5b8c17058593c3.4983844115359075895471.png" />
+    <Resource Include="recursos_img\—Pngtree—pause icon_4479731.png" />
+    <Resource Include="recursos_img\bleach.jpg" />
+    <Resource Include="recursos_img\deathnote.jpg" />
+    <Resource Include="recursos_img\evangelion.jpg" />
+    <Resource Include="recursos_img\Gantz-1.jpg" />
+    <Resource Include="recursos_img\hunterxhunter.jpg" />
+    <Resource Include="recursos_img\inuyasha.jpg" />
+    <Resource Include="recursos_img\naruto.jpg" />
+    <Resource Include="recursos_img\onepiece.jpg" />
+    <Resource Include="recursos_img\ranma-1-2.jpg" />
+    <Resource Include="recursos_img\Supercampeones.jpg" />
+    <Resource Include="recursos_img\tokyoghoul.jpg" />
+    <Resource Include="recursos_img\yuyuhakushu.jpg" />
+    <Resource Include="recursos_img\icon_user.png" />
+    <Resource Include="recursos_img\speaker-without-sound-bars_icon-icons.com_56041.png" />
+    <Content Include="recursos_vid\yt1s.com - Black Clover Opening 10 HD_720p.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos_vid\yt1s.com - Dragon Ball Super OPENING Subtitulado.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos_vid\yt1s.com - Family Guy intro_1080p.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos_vid\yt1s.com - Fast Furious 8 Tráiler Oficial 1 Universal Pictures HD_480p.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos_vid\yt1s.com - Futurama 19992013 Intro_480p.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos_vid\yt1s.com - PAPILLON Official Trailer_480p.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos_vid\yt1s.com - SPIDERMAN HOMECOMING Tráiler Oficial EN ESPAÑOL Sony Pictures España_480p.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

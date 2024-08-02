@@ -1,0 +1,24 @@
+- To decrypt a text using DES-EDE in CBC mode
+	cryptest des_DES
+
+- To decrypt a file using DES-EDE in CBC mode
+	cryptest des_DES_fich
+
+- To encrypt a file using DES-EDE in CBC mode
+	cryptest enc_DES_fich
+
+- To encrypt a file with AES in CTR mode
+	cryptest ae key_file iv_file input_file output_file
+
+-To decrypt a file with AES in CTR mode
+	cryptest ae key_file iv_file input_file output_file
+
+-To codify a text to BASE 64
+	cryptest e64 input_file output_file
+
+-To decodify a text in BASE 64
+	cryptest d64 input_file output_file
+
+-To decrypt a text cifred with DES-EDE in CBC mode using BRUTE FORCE
+	cryptest fuerzaB
+

@@ -1,0 +1,1 @@
+{"dtPartidas":[{"nombreJg":"invitado","juego":"JUEGO DE LA FORTUNA","modo":"FACIL","numPartidaActual":2,"numPartidasTotales":2,"puntAcumulada":20,"fraseO":"HOLA MUNDO"},{"nombreJg":"invitado","juego":"JUEGO DE LA FORTUNA","modo":"FACIL","numPartidaActual":2,"numPartidasTotales":0,"puntAcumulada":40,"fraseO":"LAS AMAPOLAS SON AMARILLAS"}]}

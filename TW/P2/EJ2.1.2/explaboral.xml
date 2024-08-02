@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="hojaestilo.xsl" type="text/xsl"?>
+<!--LUIS DAVID DIAZ MESA-->
+<cv>
+    <experiencia>
+        <puesto>Consultor en Tour X,Bilbao </puesto>      
+        <mesini> Octubre</mesini> 
+        <añoini> 2012 </añoini> 
+        <hasta>-</hasta> 
+        <mesfin> agosto </mesfin>
+        <añofin> 2018 </añofin> 
+    
+        <labor>
+            Proporcionar al cliente una óptima orientación
+            y una planificación empresarial basada en la experiencia 
+            de la industria y en las predicciones de las
+            tendencias del mercado.
+        </labor>
+        <labor>
+            Desarrollar metras financieras especificas y
+            estrategicas para alcanzarlas
+        </labor>
+        <labor>
+            Ayudar a diseñoar un nuevo modelo de negocio,
+            y los pasos para apoyarlo
+        </labor>
+        <labor>
+            Preparar informes financieros
+        </labor>
+    </experiencia>
+    <experiencia>
+        <puesto>Consultor en Wave Asociados,Lugo</puesto>
+        
+            <mesini> abril</mesini> 
+            <añoini> 2009 </añoini> 
+            <hasta>-</hasta> 
+            <mesfin> septiembre </mesfin>
+            <añofin> 2013 </añofin> 
+       
+         <labor>
+                Trabajar con el cliente para evaluar el progreso
+                del negocio e identificar problemas y deficiencias
+            </labor>
+            <labor>
+                Proporcionar orientación sobre publicidad,
+                desarrollo de productos y colocación de productos
+            </labor>
+            <labor>
+                Crear beneficios mensurables para la empresa
+                y proporcionar a los empleados herramientas para
+                el crecimiento 
+            </labor>
+            <labor>
+                Establecer y fomentar vias de comunicación abiertas
+                para lograr un mejor funcionamiento del equipo
+            </labor>
+    </experiencia> 
+</cv>

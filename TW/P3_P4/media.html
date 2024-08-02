@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo noticias</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./style_media.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+      <header class="row">
+        
+        <div class="col col-lg-4">
+          <div id="container-logo"><!-- flex-direction row -->
+            <label id="logo"><img src="sources/logo.png" alt="logoPagina"/></label>
+            <p>MINICARS</p>
+          </div>
+        </div>
+
+        <div class="col col-lg-4">
+          <div id="top-search">
+            <div class="search-box">
+                <form
+                id="search-form"
+                action="https://www.google.com/search"
+                method="get">
+                <input
+                type="search"
+                id="search"
+                autocomplete="off"
+                placeholder="Buscar..."
+                name="q"/>
+                    <button type="submit">
+                        <img src="icons/magnifying-glass-solid.svg" />
+                    </button>
+                </form>
+            </div>
+          </div>       
+        </div>
+      </header>
+        <main class="row">
+
+          <div class="col col-1 nav-1"><!--  d-none d-sm-block -->
+            <nav class="pri-nav">
+              <ul class="menu">
+                <li><a href="./index.html" class="menu-item">Inicio</a></li>
+                <li><a href="./productos.html" class="menu-item" class="a-target">Productos</a></li>
+                <li><a href="./media.html" class="menu-item">Media</a></li>
+                <li><a href="./registro.html" class="menu-item">Registro</a></li>
+              </ul>
+            </nav>
+          </div>
+
+              <content id="media-frame" class="col">
+                <noticias id="news">
+                    <div class="principal-news">
+                        <div class="container-img">  
+                            <p>SUPERDEPORTE.ES</p>    
+                            <img src="sources/alonso.jpg" alt="" class="img-news"/> 
+                        </div>
+                        <div class="pri-texto">
+                            <a href="https://www.superdeporte.es/formula1/2022/11/01/aston-martin-confirma-sustituto-fernando-dv-78005971.html">
+                                <h4 class="tit1"><span class="cat1">F1</span> Fernando Alonso ficha por Aston Martin.</h4>
+                                <h5>Fernando Alonso ficha por Aston Martin para la temporada de 2023 y deja buenas sensaciones con primera toma de contacto con el vehículo</h5>
+                                <p><small>TERESA GUERRERO | Madrid Hace 11 horas</small></p>  
+                            </a>
+                             <div class="likes-news">
+                                    <div class="bocadillo"><p>3</p></div>
+                                </div>  
+                                   
+                        </div>    
+                    </div>
+                    <div class="principal-news">
+                       
+                        <div class="container-img">
+                            <p>LA RAZON</p>
+                            <a href=#><img src="sources/carburante.jpg" alt="" class="img-news">
+                            </img></a>
+                        </div>
+                        <div class="pri-texto">
+                            <a href="https://www.larazon.es/economia/20220324/4ah7x2d5vzcuvoooabldyklc5m.html">
+                                <h4 class="tit2"><span class="cat2">CARBURANTE</span> El precio del carburante sigue en bajada.</h4>
+                                <h5>El precio del carburante sigue en bajada por 3ª semana consecutiva con precios no vistos desde hace un año en las gasolineras.</h5>
+                                <p><small>EFE Hace 24 Horas</small></p>
+                            </a>
+                            <div class="likes-news">
+                                <div class="bocadillo"><p>5</p></div>
+                            </div> 
+                            
+                        </div>
+                    </div>
+                    <div class="principal-news">
+                        <div class="container-img">
+                            <p>YOUTUBE</p>
+                            <img src="sources/xocas.jpg" alt="" class="img-news">
+                            </img>
+                        </div>
+                        <div class="pri-texto">
+                            <a href="https://www.youtube.com/watch?v=gDz3NCOnQVE">
+                                <h4 class="tit3"><span class="cat3">MEMES</span> El Xocas reaccionando a un montaje.</h4>
+                                <h5>El Xocas reacciona a un montaje de un autor desconocido que hace un montaje de él con su contenido de twitch</h5>
+                                <p><small>El Mundo Hace 1 día</small></p>
+                            </a>
+                            <div class="likes-news">
+                                <div class="bocadillo"><p>1</p></div>
+                            </div> 
+                            
+                        </div>
+                    </div>
+                </noticias>
+                <aside id="secondary-news">
+                    <top id="titulo-aside">
+                        <div class="tit-asi-txt">
+                            <h6 class="text-title">Lo más leido</h6>
+                        </div>
+                        <div><h6></h6></div>
+                    </top>
+                    <subnoticias class="sub-news"><!-- gris -->              
+                            <div class="popular-news"><!-- verde -->
+                                <p class="num-subnew">1</p><!-- meter div -->
+                                <p class="txt-subnew">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry.</p>              
+                            </div>
+                           <!--  <hr/> -->
+                            <div class="popular-news">
+                                <p class="num-subnew">2</p>
+                                <p class="txt-subnew">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry.</p>
+                            </div>
+                          <!--   <hr/> -->
+                            <div class="popular-news">
+                                <p class="num-subnew">3</p>
+                                <p class="txt-subnew">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry.</p>
+                        </div>
+                    </subnoticias>
+                </aside>
+            </content>
+            <footer>
+              <div id="bottom" class="col">
+                <div id="autor">Autor</div>
+                <div id="enlances">Enlaces</div>
+                <div id="social">Social</div>
+              </div>
+            </footer>
+        </main>
+
+    </div>
+</body>
+</html>
+
+    <!-- LUIS DAVID DIAZ MES X8313389Q -->

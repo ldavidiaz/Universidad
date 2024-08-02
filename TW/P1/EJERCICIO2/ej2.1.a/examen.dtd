@@ -1,0 +1,40 @@
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<!ELEMENT examen (pregunta)+>
+<!ELEMENT pregunta (id?,enunciado,(p_test | p_numerica | p_orden | p_bool | p_libre)+)+ >
+<!ATTLIST pregunta 
+    nombre CDATA #REQUIRED
+    primerApellido CDATA #REQUIRED
+    segundoApellido CDATA #IMPLIED
+    fechaCreacion CDATA #IMPLIED
+    >
+<!ELEMENT id (#PCDATA) >
+<!ATTLIST id
+        id CDATA #REQUIRED>
+<!ELEMENT enunciado (#PCDATA) >
+<!ELEMENT p_test (test1,test2,test3)+ >
+<!ATTLIST p_test 
+        tipo (unica|multiple) #IMPLIED>
+<!ELEMENT p_numerica EMPTY >
+<!ATTLIST p_numerica
+        min CDATA #REQUIRED
+        max CDATA #REQUIRED>
+<!ELEMENT p_orden (orden1,orden2,orden3,orden4) ><!-- partes de un documento XML: 1.declarion xml 2.doctype 3.Elemento raiz 4.subelemento-->
+<!ELEMENT p_bool (#PCDATA)><!-- pregunta si o no-->
+<!ATTLIST p_bool
+    respuesta (si|no|verdadero|falso) #REQUIRED>
+<!ELEMENT p_libre EMPTY >
+<!ATTLIST p_libre
+        numfilas CDATA #REQUIRED
+        numcol CDATA #REQUIRED>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT letra (#PCDATA)>
+<!ELEMENT test1 (#PCDATA)>
+<!ELEMENT test2 (#PCDATA)>
+<!ELEMENT test3 (#PCDATA)>
+<!ELEMENT orden1 (#PCDATA)>
+<!ELEMENT orden2 (#PCDATA)>
+<!ELEMENT orden3 (#PCDATA)>
+<!ELEMENT orden4 (#PCDATA)>
+
+

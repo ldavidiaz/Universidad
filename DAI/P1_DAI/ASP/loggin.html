@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1 DAI</title>
+    <link rel="stylesheet" type="text/css" href="/ASP/formulario.css" media="screen"/>
+    <style type="text/css">
+        table{
+            border-spacing: 5px;
+            width: 350px;
+        }
+        td{
+            border:none !important;
+            text-align: left !important;
+            background-color: transparent !important;
+        }
+        input[type="text"],input[type="password"]{
+            cursor: default !important;
+            text-decoration: none !important;
+            border:1px solid black;
+        }
+        input[type="submit"]{
+            background-color: snow;
+            border:1px solid #333;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <container>
+        <header>
+            <h1 style="font-family: Arial,sans-serif; font-style: italic;">ten-fe </h1>
+            <p>de llegar a tiempo...</p>
+        </header>
+        <nav>
+                <ul id="menu">
+                    <li><a href="/ASP/index.asp" style="color:white;background:transparent;
+                    border:none;font-size:16px;font-weight: bold;
+                    text-decoration: underline;cursor: pointer;
+                    letter-spacing: 1px">
+                    VOLVER ATRAS
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+        <main>
+            <div style="display: flex;
+            align-items:center;
+            justify-content: center;
+            width: 100%;margin:10px 0 20px 0">
+                <h1>Iniciar Sesion</h1>
+            </div>
+            <table> 
+                <form method="post" action="verificar-loggin.asp">
+                    <tr><td>
+                        <label for="usuario">Nombre de usuario: </label>
+                    </td><td>
+                        <input type="text" name="usuario">
+                    </td></tr>
+                    <tr><td>
+                        <label for="password">Contraseña: </label>
+                    </td><td>
+                        <input type="password" name="password">
+                    </td></tr>
+                    <tr ><td colspan="2"><center style="margin-top: 5px">
+                    <input type="submit" value="ENTRAR">
+                    </center></td></tr>
+                </form>
+            </table>
+        </main>
+    </container>
+</body>
+</html>

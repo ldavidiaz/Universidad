@@ -1,0 +1,10 @@
+#txt-contador,#contador{
+    font-family: var(--font-family);
+}
+#contador{
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    max-width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

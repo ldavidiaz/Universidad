@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<!DOCTYPE mensaje SYSTEM "mensaje.dtd">
+<mensaje>
+    <email respuesta="no">
+        <cabecera>
+            <emisor>Luis David </emisor>
+            <receptor>Manuel Quesada</receptor>
+            <receptor>Sergio</receptor>
+            <receptor>Begoña</receptor>
+            <fecha>6 Octubre</fecha>
+        </cabecera>
+        <asunto>PRACTICA XML</asunto>
+        <texto>Hola</texto>
+        <texto>
+            <saludo>Saludos.</saludo>
+        </texto>
+    </email>
+</mensaje>

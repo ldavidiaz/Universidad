@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<!DOCTYPE examen SYSTEM "examen.dtd">
+<examen>
+    <!-- TIPO TEST -->
+    <pregunta nombre="Luis David" primerApellido="Diaz">
+        <id id="P1"></id>
+        <enunciado>
+        </enunciado>
+        <p_test tipo="unica">
+            <test1><!-- ESTO ES UN EJEMPLO--></test1>
+            <test2><!-- ESTO ES UN EJEMPLO--></test2>
+            <test3><!-- ESTO ES UN EJEMPLO--></test3>
+        </p_test>
+    </pregunta>
+
+    <!-- TIPO NUMERICA-->
+    <pregunta nombre="Luis David" primerApellido="Diaz">
+        <id id="P2"></id>
+        <enunciado>
+            ¿Cuántos valores por defecto tienen los atributos?
+        </enunciado>
+        <p_numerica min="1 " max="5"></p_numerica>
+       <!--
+        <id id="P2a"></id>
+       -->
+        <enunciado><!-- ¿Cuáles son?-->
+            ¿Cuáles son?
+        </enunciado>
+        <p_libre numfilas="2" numcol="1"></p_libre>
+    </pregunta>
+
+    <!-- TIPO ORDENAMIENTO-->
+    <pregunta nombre="Luis David" primerApellido="Diaz">
+        <id id="P3"></id>
+        <enunciado>
+            <!-- ESTO ES UN EJEMPLO-->
+        </enunciado>
+        <p_orden>
+            <orden1><!-- ESTO ES UN EJEMPLO--></orden1>
+            <orden2><!-- ESTO ES UN EJEMPLO--></orden2>
+            <orden3><!-- ESTO ES UN EJEMPLO--></orden3>
+            <orden4><!-- ESTO ES UN EJEMPLO--></orden4>
+        </p_orden>
+    </pregunta>
+
+    <!-- TIPO BOOLEANA-->
+    <pregunta nombre="Luis David" primerApellido="Diaz">
+        <id id="P4"></id>
+        <enunciado>
+            ¿Se puede declarar un atributo si este modifica el valor del elemento?
+        </enunciado>
+        <p_bool respuesta="si">
+        </p_bool>
+        <!--
+        <id id="P4a"></id>
+        -->
+        <enunciado>
+            Justifica tu respuesta 
+        </enunciado>
+        <p_libre numfilas="3" numcol="1"></p_libre>
+    </pregunta>
+
+    <!-- TIPO LIBRE-->
+    <pregunta nombre="Luis David" primerApellido="Diaz">
+        <id id="P5"></id>
+        <enunciado>
+        </enunciado>
+        <p_libre numfilas="4" numcol="1"></p_libre>
+    </pregunta>
+
+    <!-- TIPO NUMERICA -->
+    <pregunta nombre="Luis David" primerApellido="Diaz">   
+        <id id="P6" />
+        <enunciado>
+            ¿Qué nota le pondrías a esta práctica?
+        </enunciado>
+        <p_numerica min="5" max="10" />
+    </pregunta>
+</examen>

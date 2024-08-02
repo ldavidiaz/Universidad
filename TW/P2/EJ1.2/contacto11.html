@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html 
+    version="-//W3C//DTD XHTML 1.1//EN"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.w3.org/1999/xhtml
+    http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
+>
+<!--LUIS DAVID DIAZ MESA-->
+<head>
+    <title>contacto</title>
+</head>
+<body>
+    <form action="mailto:luis.diaz03@goumh.umh.com" method="get" enctype="multipart/form-data">
+        <table>
+                <tr>
+                    <td colspan="2">
+                    <h1>Ingrese los datos solicitados <br/> 
+                        para ponerse en contacto conmigo</h1>
+                    </td>
+                </tr>
+                <tr>                
+                    <td><!--nombre-->
+                        Nombre *<br/><input type="text" name="fname"/><br/>
+                    </td>
+                    <td><!--apellidos-->
+                        Apellido *<br/><input type="text" name="fapellido"  /><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><!--email-->
+                        E-mail *<br/><input type="text" name="fmail"/><br/>
+                    </td>
+                    <td><!--telefono-->
+                        Teléfono *<br/><input type="text" name="ftelefono"  /><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><!--empresa-->
+                        Empresa<br/><input type="text" name="fempresa"/><br/>
+                    </td>
+                    <td><!--cargo-->
+                        Cargo<br/><input type="text" name="fcargo"/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><!--web-->
+                        Sitio Web<br/><input type="text" name="fsweb"/><br/>
+                    </td>
+                    <td><!--pais crear lista-->
+                        Pais<br/><!--<input list="paises" placeholder="Ej: España">-->
+                        <select name="paises" size="1">
+                            <option value="default">--</option>
+                            <option value="España">España</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Italia"> Italia</option>
+                            <option value="Reino_Unido">Reino Unido</option>
+                            <option value="Otro_pais">Otro pais</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br/>Preferencia de contacto *<br/>
+                        <input type="radio" name="tipo_contacto" value="external_mail" />E-mail personal<br/>
+                        <input type="radio" name="tipo_contacto" value="empresa"  />E-mail empresa<br/>
+                        <input type="radio" name="tipo_contacto" value="telefono_personal"  />Teléfono personal<br/>
+                        <input type="radio" name="tipo_contacto" value="telefono_empresa" checked="checked"/>Teléfono empresa<br/>       
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><!--comentario-->
+                    <p>Información adicional</p>
+                    <textarea name="comentario" cols="40" rows="15"></textarea>
+                    <br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="politica_privacidad" value="apv" checked="checked"/>Acepto la política de privacidad
+                        <br/><br/>
+                        <input type="submit" value="SOLICITAR INFORMACIÓN"/>
+                    </td>
+                </tr>
+        </table>
+    </form>
+    <p>
+        <a href="http://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+      </p>
+</body>
+</html>

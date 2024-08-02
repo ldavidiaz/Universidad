@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<!DOCTYPE mensaje SYSTEM "mensaje2.dtd">
+<mensaje> 
+    <e1:email xmlns:e1="email.xml" respuesta="no" >
+        <e1:cabecera>
+            <e1:emisor>Luis David </e1:emisor>
+            <e1:receptor>Manuel Quesada</e1:receptor>
+            <e1:fecha>6 Octubre</e1:fecha>
+        </e1:cabecera>
+        <e1:asunto></e1:asunto>
+        <e1:texto>hola
+            <e1:saludo></e1:saludo>
+        </e1:texto>
+    </e1:email>
+    <e2:carta xmlns:e2="carta.xml" respuesta="no">
+        <e2:encabezado>
+            <e2:emisor>Luis David</e2:emisor>
+            <e2:receptor>Manuel Quesada</e2:receptor>
+            <e2:fecha>6 Octubre</e2:fecha>
+        </e2:encabezado>
+        <e2:texto>
+            <e2:saludo></e2:saludo>
+        </e2:texto>
+    </e2:carta>
+</mensaje>

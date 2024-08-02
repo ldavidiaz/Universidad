@@ -1,0 +1,22 @@
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<!ELEMENT mensaje ( e1:email | e2:carta )* >
+<!ELEMENT e1:email (e1:cabecera, e1:asunto?, e1:texto+) >
+<!ATTLIST e1:email xmlns:e1 CDATA #FIXED "email.xml" >
+<!ATTLIST e1:email respuesta ( si | no ) "no" >
+<!ELEMENT e2:carta (e2:encabezado, e2:texto ) >
+<!ATTLIST e2:carta xmlns:e2 CDATA #FIXED "carta.xml" >
+<!ATTLIST e2:carta respuesta ( si | no ) "no" >
+<!ELEMENT e1:cabecera ( e1:emisor, e1:receptor*, e1:fecha?) >
+<!ELEMENT e1:asunto ( #PCDATA ) >
+<!ELEMENT e1:texto ( #PCDATA | e1:saludo )* >
+<!ELEMENT e2:texto ( #PCDATA | e2:saludo )* >
+<!ELEMENT e2:encabezado ( e2:emisor, e2:receptor*, e2:fecha ) >
+<!ELEMENT e1:emisor ( #PCDATA ) >
+<!ELEMENT e1:receptor ( #PCDATA ) >
+<!ELEMENT e2:emisor ( #PCDATA ) >
+<!ELEMENT e2:receptor ( #PCDATA ) >
+<!ELEMENT e1:fecha ( #PCDATA ) >
+<!ELEMENT e2:fecha ( #PCDATA ) >
+<!ELEMENT e1:saludo ( #PCDATA ) >
+<!ELEMENT e2:saludo ( #PCDATA ) >

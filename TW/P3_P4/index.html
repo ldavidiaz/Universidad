@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Practica 3</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+    <div class="container-fluid">
+      <header class="row">
+        
+        <div class="col col-lg-4">
+          <div id="container-logo"><!-- flex-direction row -->
+            <label id="logo"><img src="sources/logo.png" alt="logoPagina"/></label>
+            <p>MINICARS</p>
+          </div>
+        </div>
+
+        <div class="col col-lg-4">
+          <div id="top-search">
+            <div class="search-box">
+                <form
+                id="search-form"
+                action="https://www.google.com/search"
+                method="get">
+                <input
+                type="search"
+                id="search"
+                autocomplete="off"
+                placeholder="Buscar..."
+                name="q"/>
+                    <button type="submit">
+                        <img src="icons/magnifying-glass-solid.svg" />
+                    </button>
+                </form>
+            </div>
+          </div>       
+        </div>
+      </header>
+      <main class="row">
+
+        <div class="col col-1 nav-1"><!--  d-none d-sm-block -->
+          <nav class="pri-nav">
+            <ul class="menu">
+              <li><a href="./index.html" class="menu-item">Inicio</a></li>
+              <li><a href="./productos.html" class="menu-item" class="a-target">Productos</a></li>
+              <li><a href="./media.html" class="menu-item">Media</a></li>
+              <li><a href="./registro.html" class="menu-item">Registro</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <content id="index-frame" class="col col-lg-11">
+          <div id="welcome">
+            <h1>NOSOTROS</h1>
+            <p>
+              MINICARS es una pagina dedicada a la difusión de los mejores modelos en autos a escala que se ofertan en la pagina de AMAZON, siempre buscando la mejor calidad y el mejor precio.
+              Se realiza la selección de las mejores marcas y modelos variados para que exista una amplia gama de selección por parte de nuestros clientes.              
+              En su gran mayoría nuestros clientes estan conformados por coleccionistas.
+            </p>
+            <p>   
+              Automóviles a escala esta constantemente actualizando sus productos con la pagina de AMAZON para que no exista productos desfasados y precios actualizados.
+            </p>
+          </div>
+          <div id="sede">
+            
+            <div class="location">
+              <p>Amazon Alicante</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200285.6541389191!2d-0.6958001109229544!3d38.33825649328165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235761e90d955%3A0x78cb5b8282ee9a58!2sAlmac%C3%A9n%20log%C3%ADstico%20Amazon%20Alicante!5e0!3m2!1ses!2ses!4v1671056915987!5m2!1ses!2ses" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="location">
+              <p>Amazon Madrid</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1553233.3805596875!2d-5.213185802261515!3d40.50492419507128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424f04c4b4c1d7%3A0x52abf5af6b25d1e1!2sAmazon%20MAD9!5e0!3m2!1ses!2ses!4v1671057059914!5m2!1ses!2ses" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location">
+              <p>Amazon Barcelona</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d291553.24045747065!2d1.8390912095584966!3d41.432125478481225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49e9ad9b6f997%3A0x28ecd0bb89c73578!2sAmazon%20BCN1!5e0!3m2!1ses!2ses!4v1671057248032!5m2!1ses!2ses" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div id="youtube">
+            <div class="video">
+              <iframe width="500" height="280" src="https://www.youtube.com/embed/2ugOloTP0Vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe width="500" height="280" src="https://www.youtube.com/embed/PFBKNKfndMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </content>
+        <footer>
+          <div id="bottom" class="col">
+            <div id="autor">Autor</div>
+            <div id="enlances">Enlaces</div>
+            <div id="social">Social</div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
+<!-- LUIS DAVID DIAZ MES X8313389Q -->

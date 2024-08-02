@@ -1,0 +1,19 @@
+.inputs-add-update{
+    background-color: #4a934a;
+    color: #EDEDED;
+    border: none;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+.inputs-clear{
+    background-color: #0A2971;
+    color: #EDEDED;
+    border: none;
+    padding: 5px;
+    letter-spacing: 1px; 
+}
+
+input[type="submit"],input[type="reset"]{
+    cursor: pointer;
+    font-size: 15px;
+}

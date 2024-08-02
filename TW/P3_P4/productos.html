@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Productos</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link href="./style_productos.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <script src="assets/banner-producto.js" ></script>
+    <script src="assets/carrito-compra.js"></script>
+    <div class="container-fluid">
+      <header class="row">
+        
+                <div class="col col-lg-4">
+                  <div id="container-logo"><!-- flex-direction row -->
+                    <label id="logo"><img src="sources/logo.png" alt="logoPagina"/></label>
+                    <p>MINICARS</p>
+                  </div>
+                </div>
+        
+                <div class="col col-lg-4">
+                  <div id="top-search">
+                    <div class="search-box">
+                        <form
+                        id="search-form"
+                        action="https://www.google.com/search"
+                        method="get">
+                        <input
+                        type="search"
+                        id="search"
+                        autocomplete="off"
+                        placeholder="Buscar..."
+                        name="q"/>
+                            <button type="submit">
+                                <img src="icons/magnifying-glass-solid.svg" />
+                            </button>
+                        </form>
+                    </div>
+                  </div>       
+                </div>
+                <!-- <div id="shadow"></div> -->
+                <div class="col col-lg-4 col__cart">
+                  <div  id="container-cart"><!-- flex-direction:row -->
+                    <input id="cartLabel" type="checkbox" name="checkbox">
+                    <label for="cartLabel" id="lbl-shoppingcart"><img src="icons/carrito-de-compras.png" id="img--cart" alt="icon-shopping-cart"/>
+                       <!-- <span style="color: rgb(255, 255, 255);">&nbsp;0</span> -->
+                      </label>
+                    <label for="cartLabel" id="lbl-r-arrow"><span style="color: gray; position: fixed;">X</span><!-- <img src="icons/right-arrow.svg" id="img--arrow" alt="flecha-der"> --></label>
+                    
+                    <div id="cart-info"><!-- flex-direction:column -->
+                     <div id="cont-cart-products">
+                        <div id="cab-cart-product">
+                            <div>
+                            <p>Bienvenido</p>
+                            <h4>Mi Carrito</h4>
+                            </div>
+                        </div>
+                        <div id="fields-cart-products">
+                          <span>Nombre</span>
+                          <span>Cantidad</span>
+                          <span>Precio</span>
+                          <span>Descontado</span>
+                          <span>Subtotal</span>
+                          <span>IVA</span>
+                          <span>&nbsp;&nbsp;&nbsp;</span>
+                        </div>
+                        <div id="cart-products">
+                        </div>
+                     </div>
+                      <!-- <hr> -->
+                      <div class="cart-total">
+                        <div class="total-iva"><!-- flex-direction column -->
+                          <div>
+                              <p>Seleccione tipo de IVA: </p>
+                          </div>
+                        <input list="tipo-iva" id="total-iva2" placeholder="    v" onchange="calculaIva()">
+                            <datalist id="tipo-iva">
+                              <!-- <select id="select-iva"> -->
+                                <option value="100">--</option>
+                                <option value="4">4%</option>
+                                <option value="8">8%</option>
+                                <option value="21">21%</option>
+                              <!-- </select> -->
+                            </datalist>
+                        </div>
+                        
+                        <div class="total-offer">
+                          <p>Se ha descontado un <span></span><br/> al TOTAL de tu carrito de la compra</p>
+
+                        </div>
+        
+                        <div class="total-price">
+                          <div>
+                              <p>TOTAL:</p>
+                          </div>
+                              <p id="cart-totals" > 0 </p>
+                          <div>
+        
+                          </div>
+                        </div>
+                        <div class="cart-buy">
+                            <button></button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+        
+      </header>
+
+      <navbar class="row">
+        <nav class="sec-nav col">
+            <input type="checkbox" id="sec-menu" name="sec-input">
+            <label for="sec-menu"> ☰ </label>
+            <div class="container-sbox2">
+            <div class="search-box2">
+              <form
+              id="search-form2"
+              action=""
+              method="get">
+                <input
+                type="search"
+                id="search-2"
+                autocomplete="off"
+                placeholder="Buscar..."
+                name="q"/>
+                <button type="submit">
+                    <img src="icons/magnifying-glass-solid.svg" />
+                </button>
+              </form>
+          </div>
+          </div>
+          <ul class="menu2"> 
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Registro</a></li>
+          </ul>
+        </nav>
+      </navbar>
+
+      <main class="row">
+        <!-- barra de navegacion segundaria -->
+        <div class="col col-1 nav-1"><!--  d-none d-sm-block -->
+          <nav class="pri-nav">
+            <ul class="menu">
+              <li><a href="./index.html" class="menu-item">Inicio</a></li>
+              <li><a href="./productos.html" class="menu-item" class="a-target">Productos</a></li>
+              <li><a href="./media.html" class="menu-item">Media</a></li>
+              <li><a href="./registro.html" class="menu-item">Registro</a></li>
+            </ul>
+          </nav>
+        </div>
+       <content id="product-frame" class="bd-products" class="col">
+        <anuncio>
+          <div id="banner">
+            <h4 id="banner-title">
+              Clica en el banner para obtener<br/>
+              un descuento del <span id="banner-descuento" style="font-size: 1em;"></span>
+            </h4>
+          </div>
+        </anuncio>
+        
+          <h2>Productos</h2>           
+          <h3>Miniaturas coches deportivos </h3>
+          <div class="product-line" id="cars"> 
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+                  <div>
+                  <p class="p-discount">10%</p>          
+                  </div>   
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/CARS-DEP/DEP1.jpg" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">108</p><p>&nbsp€</p><span>120 €</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#0','10');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+<!--                   <div>
+                  <p class="p-discount">30%</p>          
+                  </div>    -->
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/CARS-DEP/dep2.jpg" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description>
+                  <a href="https://amazon.es/Maisto-531514bk-Modelo-Auto-Negro/dp/B07D5H11SL">
+                    <p class="description-product"><span class="title__product">Maisto Bugatti Chiron:Modelo Fiel a Escala 1:24</span>
+                      Puertas móviles,
+                       19 cm,
+                        Gris (531514BK)
+                    </p>
+                  </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">180.50 </p><p>&nbsp€</p><span>SIN IVA</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#1','0');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+<!--                   <div>
+                  <p class="p-discount">30%</p>          
+                  </div>    -->
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/CARS-DEP/dep3.jpg" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">120</p><p>&nbsp€</p><span>SIN IVA</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#2','0');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+                  <div>
+                  <p class="p-discount">10%</p>          
+                  </div>   
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/CARS-DEP/dep4.jpg" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">90 </p><p>&nbsp€</p><span>100 €</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#3','10');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+          </div>
+
+          <h3>Miniaturas coches clásicos</h3>
+          <div class="product-line" id="accesories">     
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+<!--                   <div>
+                  <p class="p-discount">30%</p>          
+                  </div>    -->
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/CARS-CLAS/CLAS1.jpg" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">12.99 </p><p>&nbsp€</p><span>SIN IVA</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#4','0');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+<!--                   <div>
+                  <p class="p-discount">0%</p>          
+                  </div>    -->
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/CARS-CLAS/CLAS2.jpg" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">40.99 </p><p>&nbsp€</p><span>SIN IVA</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#5','0');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+                  <div>
+                  <p class="p-discount">20%</p>          
+                  </div>   
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/CARS-CLAS/CLAS3.jpg" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">60</p><p>&nbsp€</p><span>74.99 €</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#6','20');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+<!--                   <div>
+                  <p class="p-discount">30%</p>          
+                  </div>    -->
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/CARS-CLAS/CLAS4.jpg" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">35.99 </p><p>&nbsp€</p><span>SIN IVA</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#7','0');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+          </div>
+
+          <h3>Merchardising</h3>
+          <div class="product-line" id="merch">
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+                  <div>
+                  <p class="p-discount">50%</p>          
+                  </div>   
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/merch1.png" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">12.99 </p><p>&nbsp€</p><span>25.99 €</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#8','50');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+                  <div>
+                  <p class="p-discount">50%</p>          
+                  </div>   
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/merch2.png" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">40</p><p>&nbsp€</p><span>80 €</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#9','50');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+<!--                   <div>
+                  <p class="p-discount">0%</p>          
+                  </div>   --> 
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/merch3.png" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">12.99 </p><p>&nbsp€</p><span>SIN IVA</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#10','0');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+
+            <div class="single-product">
+              <div class="container-img">
+                <discount>
+                  <div>
+                  <p class="p-discount">10%</p>          
+                  </div>   
+                </discount><!-- añadir un hoover para ampliar la imagen -->
+                <a href="#"> <img src="sources/merch4.png" alt="cap"/></a>
+              </div>
+
+              <div class="container-info">
+                <description><!-- inline -->
+                <a href="#">
+                  <p class="description-product"><span class="title__product"> Titulo 0 </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum commodi nihil ipsa atque quod impedit harum cum quae accusamus 
+                    reiciendis quaerat quo eligendi, mollitia, consequuntur
+                  </p>
+                </a>  
+                </description>
+
+                <valoration>
+                  <form>
+                    <p class="clasificacion" id="sp1">
+                      <input id="radio1" type="checkbox" name="checkbox" value="5"/><!--
+                      --><label for="radio1" >★</label><!--
+                      --><input id="radio2" type="checkbox" name="checkbox" value="4"/><!--
+                      --><label for="radio2" >★</label><!--
+                      --><input id="radio3" type="checkbox" name="checkbox" value="3"/><!--
+                      --><label for="radio3" >★</label><!--
+                      --><input id="radio4" type="checkbox" name="checkbox" value="2"/><!--
+                      --><label for="radio4">★</label><!--
+                      --><input id="radio5" type="checkbox" name="checkbox" value="1"/><!--
+                      --><label for="radio5">★</label>
+                    </p>
+                  </form>
+                </valoration>
+
+                <stock>
+                 <p>3 unidades</p>
+                </stock>
+
+                <precio><!-- inline -->
+                  <p class="precio__product">40.99</p><p>&nbsp€</p><span>44.99 €</span>  
+                </precio>
+                <buy>
+                  <div class="add-car">
+                      <a href="#" class="btn btn-info" onclick="addCarrito('#11','10');">Añadir al carro</a>
+                  </div>
+                  <div class="buy">
+                    
+                  </div>
+                </buy>
+              </div>
+            </div>
+          </div>
+        </content>
+        <footer>
+          <div id="bottom" class="col">
+            <div id="autor">Autor</div>
+            <div id="enlances">Enlaces</div>
+            <div id="social">Social</div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
+<!-- LUIS DAVID DIAZ MES X8313389Q -->

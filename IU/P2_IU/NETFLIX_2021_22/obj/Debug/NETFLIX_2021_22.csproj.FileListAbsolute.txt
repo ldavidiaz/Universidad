@@ -1,0 +1,38 @@
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\NETFLIX_2021_22.exe.config
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\NETFLIX_2021_22.exe
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\NETFLIX_2021_22.pdb
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22.csprojAssemblyReference.cache
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\MainWindow.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\App.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22_MarkupCompile.cache
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22_MarkupCompile.lref
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\MainWindow.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22.g.resources
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22.Properties.Resources.resources
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22.csproj.GenerateResource.cache
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22.exe
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22.pdb
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\Login.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\Login.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer1.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer1.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer2.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer3.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer4.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer2.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer3.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer4.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\recursos_vid\yt1s.com - Black Clover Opening 10 HD_720p.mp4
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\recursos_vid\yt1s.com - Dragon Ball Super OPENING Subtitulado.mp4
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\recursos_vid\yt1s.com - Family Guy intro_1080p.mp4
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\recursos_vid\yt1s.com - Fast Furious 8 Tráiler Oficial 1 Universal Pictures HD_480p.mp4
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\recursos_vid\yt1s.com - Futurama 19992013 Intro_480p.mp4
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\recursos_vid\yt1s.com - SPIDERMAN HOMECOMING Tráiler Oficial EN ESPAÑOL Sony Pictures España_480p.mp4
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\intro_blackcover.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\NETFLIX_2021_22_Content.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\intro_blackcover.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer5.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer6.g.cs
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer5.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\obj\Debug\trailer6.baml
+C:\Users\System 32\Desktop\PRAC2_IU\NETFLIX_2021_22\bin\Debug\recursos_vid\yt1s.com - PAPILLON Official Trailer_480p.mp4

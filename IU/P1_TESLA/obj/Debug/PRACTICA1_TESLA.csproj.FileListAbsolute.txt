@@ -1,0 +1,36 @@
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\bin\Debug\PRACTICA1_TESLA.exe.config
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\bin\Debug\PRACTICA1_TESLA.exe
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\bin\Debug\PRACTICA1_TESLA.pdb
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.csprojAssemblyReference.cache
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\MainWindow.g.cs
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\App.g.cs
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA_MarkupCompile.cache
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA_MarkupCompile.lref
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\MainWindow.baml
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.g.resources
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.Properties.Resources.resources
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.csproj.GenerateResource.cache
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.csproj.CopyComplete
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.exe
+C:\Users\System 32\Desktop\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.pdb
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\bin\Debug\PRACTICA1_TESLA.exe.config
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\bin\Debug\PRACTICA1_TESLA.exe
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\bin\Debug\PRACTICA1_TESLA.pdb
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.csprojAssemblyReference.cache
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\MainWindow.g.cs
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\App.g.cs
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA_MarkupCompile.cache
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA_MarkupCompile.lref
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\MainWindow.baml
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.g.resources
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.Properties.Resources.resources
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.csproj.GenerateResource.cache
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.csproj.CopyComplete
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.exe
+C:\Users\System 32\Desktop\NUBE\DESK 2\practica 1 IU\PRACTICA1_TESLA\obj\Debug\PRACTICA1_TESLA.pdb

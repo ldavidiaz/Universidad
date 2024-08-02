@@ -1,0 +1,57 @@
+<!-- #include file=conexion.asp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1 DAI</title>
+    <link rel="stylesheet" type="text/css" href="/ASP/formulario.css" media="screen"/>
+</head>
+<body>
+    <container>
+        <header>
+            <h1 style="font-family: Arial,sans-serif; font-style: italic;">ten-fe </h1>
+            <p>de llegar a tiempo...</p>
+        </header>
+        <nav>
+            <ul id="menu">
+            	<li><a href="/ASP/index.asp">BUSCADOR</a></li>
+                <li><a href="/ASP/loggin.html" style="color:white;background:transparent;
+                    border:none;font-size:16px;font-weight: bold;
+                    text-decoration: underline;cursor: pointer;
+                    letter-spacing: 1px">
+                    INICIAR SESION
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+
+            <buscador>
+                <titulo>
+                    <h2>Consulta tus reservas de vuelos</h2>
+                </titulo>
+                <form name="form-reservas" method="post" action="verificar-id-reserva.asp">
+					<div>
+						<label for="consultar-reserva-idvuelo"> CODIGO DE RESERVA: </label>
+						<input type="text" name="consultar-cod-reserva" required>
+					</div>
+					<div>
+    					<label for="consultar-reserva-nif">NIF:</label>
+    					<input type="text" name="consultar-reserva-nif" id="con-res-nif" required>
+					</div>
+					<div id="btn-buscar">
+						<input type="submit" value="CONSULTAR" 
+                        style="background-color: snow;cursor: pointer;
+                        border:1px solid #333;border-radius: 3px;">
+                    </div>
+				</form>
+            </buscador>
+        </main>
+        <footer>
+
+        </footer>
+    </container>
+</body>
+</html>

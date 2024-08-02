@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<!DOCTYPE mensaje SYSTEM "mensaje.dtd">
+<mensaje>
+    <carta respuesta="no">
+        <encabezado>
+            <emisor>Luis David</emisor>
+            <receptor>Manuel Quesada</receptor>
+            <fecha>6 Octubre</fecha>
+        </encabezado>
+        <texto>
+            Hola
+            <saludo>Saludos</saludo>
+        </texto>
+    </carta>
+</mensaje>

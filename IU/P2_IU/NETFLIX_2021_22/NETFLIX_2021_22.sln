@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETFLIX_2021_22", "NETFLIX_2021_22.csproj", "{0FA4399E-255A-40BC-84EB-C484CACB8626}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FA4399E-255A-40BC-84EB-C484CACB8626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA4399E-255A-40BC-84EB-C484CACB8626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA4399E-255A-40BC-84EB-C484CACB8626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA4399E-255A-40BC-84EB-C484CACB8626}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A76457E-543A-45D1-AC08-6B1BABD11D3E}
+	EndGlobalSection
+EndGlobal

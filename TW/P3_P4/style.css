@@ -1,0 +1,270 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a:link{
+    text-decoration: none;
+}
+/* ------------------FONTS--------------- */
+
+@font-face {
+    font-family: gobold;
+    src: url(fonts/Gobold.Regular.otf);
+    font-family: kenyan;
+    src: url(fonts/kenyan\ coffee\ rg.ttf);
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+  
+/* ------------------GRID---------------- */
+.container-fluid{
+    min-height: 100vh;
+}
+
+.col{
+    margin: 0;
+    padding: 0;
+}
+/* -----------------MEDIA-QUERIES---------- */
+
+@media screen and (max-width: 750px) {
+    .top-search{display: none !important;}
+    .container-img{display:none !important;}
+    aside{display: none !important;}
+  /*   footer{flex-direction: column !important; align-items: center !important;} */
+    #bottom{flex-direction: column !important; justify-content: flex-start !important; align-items: center !important; }
+    #bottom div:not(:first-of-type){display: none !important;}
+    #cart-info{display: flex !important;}
+}
+/* ------------------HEADER---------------- */
+header{
+    height: 80px;
+/*     background: rgb(255, 25, 0);
+    border-bottom: 2px solid black; */
+    background: #0e2c40;
+}
+
+/*---- logo -----*/
+#container-logo{
+    height: 100%;
+    max-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+/*     border: 1px solid red;   */ 
+}
+
+#logo img{
+    height: 100%;
+    width: 100%;
+    max-height: 80px; 
+    max-width: 105px;
+    padding: 0;
+    object-fit: cover;
+    filter: invert(100%);
+/*     border:1px solid orangered; */
+}
+#container-logo p{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem; 
+    color: white;
+}
+
+
+/* ------------------FORMULARIO---------------- */
+input[type="search"]::-webkit-search-decoration:hover,
+input[type="search"]::-webkit-search-cancel-button:hover { 
+    cursor:pointer; 
+}
+
+/* input[type="search"]::-webkit-search-cancel-button{
+    cursor: pointer;
+} */
+
+#top-search{
+    height: 100%;
+    max-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box{
+    width: 100%;
+    height: 45%;
+    max-width: 250px;
+    background: white;
+    border-radius: 60px;
+    padding: 3px 5px !important;
+}
+
+#search-form input#search{
+   
+    background:transparent;
+    border: none;
+    font-family: roboto;
+    font-size: 13pt;
+    padding-left: 5px;
+    outline: none;
+    border: 0; 
+}
+
+#search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+::placeholder{
+    color: #000000;
+}
+
+#search-form button{
+    
+    border: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+#search-form button img{
+    width: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*----------------BODY ----------------- */ 
+body{
+    font-family: gobold,roboto;
+}
+/* ------------------MAIN---------------- */
+
+main{
+    height: auto;
+    background-color: #f1f0f0;
+}
+
+/* ------------------NAV---------------- */
+.pri-nav{
+    width: 90px;
+    max-width: 115px;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    border-right:1px solid gray;
+}
+
+nav .menu{  
+    height:100%; 
+    width: 90px;
+    max-width: 115px;
+    position: fixed;
+    margin:0;
+    padding: 0;
+    list-style: none;
+    font-family: gobold,roboto;
+    font-weight: 500;
+    font-size: 1rem;   
+}
+
+.menu li{ 
+    height: fit-content;
+    width: fit-content;
+    text-align:left;  
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 35px; 
+}
+
+.menu li a{  
+    color: rgb(35, 35, 35);
+}
+.menu li:nth-child(1){
+    width: 100%;
+    border-right:3px solid #0e2c40;
+}
+
+.menu li:hover{
+    width: 100%;
+    background-color: #0e2c40;  
+}
+.menu li a:hover{
+    color: rgb(255, 255, 255);
+}
+/* ------------------CONTENT---------------- */
+
+content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height:100%;
+   width: 100%;
+}
+content div{
+    width:90%;
+    height:100%;
+    margin: 30px;
+/*     border: 1px solid black; */
+}
+h1{
+    color: rgb(255, 20, 0);
+}
+#welcome p{
+    width: 100%;
+}
+#sede{
+    display: flex;
+    flex-direction: row;
+    width: 90%
+}
+
+#sede div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+}
+.location{
+    width: 33%;
+}
+
+#youtube{
+    display: flex;
+    gap: 3px;
+}
+
+#youtube div{
+    width: 100%;
+}
+
+/* ------------------FOOTER---------------- */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    margin-top: 20px;    
+    /* border-top: 1px solid black; */
+    background-color:  #0e2c40;
+}
+
+#bottom {
+    display:flex;
+    justify-content:center;
+    padding: 10px;
+}
+#bottom div{
+    width: 25%;
+    text-align: center;
+    color: white;
+}
+
+/* LUIS DAVID DIAZ MESA*/

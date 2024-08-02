@@ -1,0 +1,39 @@
+<!ELEMENT respuestas (alumno)+>
+<!ELEMENT alumno (pregunta)+>
+<!ATTLIST alumno
+    nombre CDATA #REQUIRED
+    apellidos CDATA #REQUIRED
+    fecha CDATA #REQUIRED>
+<!ELEMENT pregunta (respuesta)+>
+<!ATTLIST pregunta 
+    id CDATA #REQUIRED>   
+<!ELEMENT respuesta (r_test | r_numerica | r_ordenar | r_booleana | r_libre)+>
+<!ATTLIST respuesta 
+    tipo CDATA #REQUIRED>
+<!ELEMENT r_test (#PCDATA)>
+<!ATTLIST r_test 
+    tipo (unica|multiple) #REQUIRED
+    respuestaUnicaOk (A|B|C) #IMPLIED
+    respuestaMultipleOk CDATA #IMPLIED>
+<!ELEMENT r_numerica (#PCDATA)>
+<!ATTLIST r_numerica 
+    respuestaOk CDATA #REQUIRED>
+<!ELEMENT r_ordenar (frase1_o,frase2_o,frase3_o,frase4_o)>
+<!ELEMENT r_booleana (#PCDATA)>
+<!ATTLIST r_booleana 
+    respuestaOk (si|no|verdadero|falso) #REQUIRED>
+<!ELEMENT r_libre (#PCDATA)>
+<!ATTLIST r_libre
+    respuestaOk CDATA #IMPLIED>
+<!ELEMENT frase1_o (#PCDATA)>
+<!ATTLIST frase1_o 
+    respuestaOk (1|2|3|4) #REQUIRED>
+<!ELEMENT frase2_o (#PCDATA)>
+<!ATTLIST frase2_o 
+    respuestaOk (1|2|3|4) #REQUIRED>
+<!ELEMENT frase3_o (#PCDATA)>
+<!ATTLIST frase3_o 
+    respuestaOk (1|2|3|4) #REQUIRED>
+<!ELEMENT frase4_o (#PCDATA)>
+<!ATTLIST frase4_o 
+    respuestaOk (1|2|3|4) #REQUIRED>

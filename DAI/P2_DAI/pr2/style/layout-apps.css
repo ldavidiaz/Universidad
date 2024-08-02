@@ -1,0 +1,93 @@
+main{
+    flex-direction: column;
+    justify-content: start !important;
+}
+a{
+    text-decoration: none;
+    color: #ededed;
+    /* font-weight: 400; */
+}
+
+main{
+    align-items: center;
+}
+main h1{
+    margin: 0;
+    width: 50%;
+    height: 10%;
+    padding-top: 10px;
+    text-decoration: underline;
+    color: #1f1f1f;
+    white-space: nowrap;
+}
+
+.layout-apps {
+    width: 50%;
+    height: 70%;  
+    align-self: center;
+    display: grid;
+    grid:
+      "app1 app2 app3" 1fr
+      "app4 app5 sair" 1fr
+      / 1fr 1fr 1fr;
+    gap: 8px;
+    grid-auto-flow: row dense;
+
+    justify-content: center;
+    align-content: center;
+
+    padding-bottom: 30px;
+  }
+.layout-apps > a{
+    height: 100%;
+    background-color: #457B9D;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+a > i{
+    /* padding-top: 10px; */
+    transform: translateY(10px);
+    height: 85%;
+}
+
+a>p{
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 500; */
+}
+.name-app{/* <p> */
+    margin-top: 0;
+}
+.app1 { 
+    grid-area: app1; 
+}
+.app2 { 
+    grid-area: app2;
+
+}
+.app3 {
+    grid-area: app3;
+
+}
+.app4 { 
+    grid-area: app4;
+
+}
+.app5 { 
+    grid-area: app5; 
+
+}
+.sair { 
+    grid-area: sair;
+
+}
+
+i{
+    font-size: 7em;
+    color: #f0f0f0;
+}
+

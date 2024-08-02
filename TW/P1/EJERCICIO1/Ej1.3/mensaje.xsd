@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LUIS DAVID DIAZ MESA
+SERGIO MONTALBÁN ATENCIA-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="mensaje" type="tipoMensaje"/>
+
+    <xsd:complexType name="tipoMensaje">
+        <xsd:choice>
+            <xsd:element name="email" type="tipoEmail"></xsd:element>
+            <xsd:element name="carta" type="tipoCarta"></xsd:element>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoEmail">
+        <xsd:sequence>
+            <xsd:element name="cabecera" type="tipoCabecera"></xsd:element>
+            <xsd:element name="asunto" minOccurs="0" maxOccurs="1" type="xsd:string"></xsd:element >
+            <xsd:element name="texto" minOccurs="1" maxOccurs="unbounded" type="tipoTexto"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="respuesta" type="tipoRespuesta" default="no" use="optional"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoCarta">
+        <xsd:sequence>
+            <xsd:element name="encabezado" type="tipoEncabezado"></xsd:element>
+            <xsd:element name="texto" type="tipoTexto"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="respuesta" type="tipoRespuesta" default="no" use="optional"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoCabecera">
+        <xsd:sequence>
+            <xsd:element name="emisor" type="xsd:string"/>
+            <xsd:element name="receptor" minOccurs="0" maxOccurs="unbounded" type="xsd:string"/>
+            <xsd:element name="fecha"  minOccurs="0" maxOccurs="1" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoTexto">   
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="saludo" type="xsd:string"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoEncabezado">
+        <xsd:sequence>
+            <xsd:element name="emisor" type="xsd:string"/>
+            <xsd:element name="receptor" minOccurs="0" maxOccurs="unbounded" type="xsd:string"/>
+            <xsd:element name="fecha"  type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+   
+    <xsd:simpleType name="tipoRespuesta">
+       <xsd:restriction  base="xsd:string">
+        <xsd:enumeration value="si"/>
+        <xsd:enumeration value="no"/>
+       </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
